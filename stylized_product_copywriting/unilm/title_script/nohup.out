@@ -1,0 +1,15 @@
+11/04/2021 03:06:56 - INFO - __main__ -   device: cuda n_gpu: 2, distributed training: False, 16-bits training: True
+11/04/2021 03:06:56 - INFO - pytorch_pretrained_bert.tokenization -   loading vocabulary file /home/xiaojie.guo/Data/unilm_pretrain/model_epoch34/vocab.txt
+Loading Train Dataset /mnt/10.252.199.12/home/xiaojie.guo/daren_data/1342/processed_title/processed
+Traceback (most recent call last):
+  File "../run_seq2seq.py", line 499, in <module>
+    main()
+  File "../run_seq2seq.py", line 290, in main
+    fn_src, fn_tgt, args.train_batch_size, data_tokenizer, args.max_seq_length, file_oracle=file_oracle, bi_uni_pipeline=bi_uni_pipeline)
+  File "/home/xiaojie.guo/stylized_personal_write/unilm/biunilm/seq2seq_loader.py", line 71, in __init__
+    src_tk = tokenizer.tokenize(src.strip())
+  File "/home/xiaojie.guo/stylized_personal_write/unilm/pytorch_pretrained_bert/tokenization.py", line 175, in tokenize
+    return whitespace_tokenize(text)
+  File "/home/xiaojie.guo/stylized_personal_write/unilm/pytorch_pretrained_bert/tokenization.py", line 86, in whitespace_tokenize
+    tokens = text.split()
+KeyboardInterrupt

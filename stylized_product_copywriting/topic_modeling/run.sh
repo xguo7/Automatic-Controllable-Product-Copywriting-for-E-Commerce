@@ -1,0 +1,1 @@
+nohup python topic_model.py >output 2>&1 &

@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python biunilm/run_seq2seq_merge.py --do_train --fp16 --amp --num_workers 0 \
+  --bert_model bert-base-chinese --new_segment_ids --tokenized_input \
+  --data_dir /export/Data/zhangxueying17/smart_shopping/Pretrain_Data/unilm_v2/processed \
+  --output_dir /export/Data/zhangxueying17/Pretrain_Text_Generation/unilm_v2/bert_save \
+  --log_dir /export/Data/zhangxueying17/Pretrain_Text_Generation/unilm_v2/bert_log \
+  --max_seq_length 250 --max_position_embeddings 250 \
+  --trunc_seg a --always_truncate_tail --max_len_b 90 \
+  --mask_prob 0.15 --max_pred 64 \
+  --mask_source_words \
+  --train_batch_size 330 --gradient_accumulation_steps 2 \
+  --learning_rate 0.00003 --warmup_proportion 0.1 --label_smoothing 0.1 \
+  --num_train_epochs 100

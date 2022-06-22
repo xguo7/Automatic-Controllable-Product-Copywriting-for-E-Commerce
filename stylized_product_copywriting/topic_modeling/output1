@@ -1,0 +1,13 @@
+nohup: ignoring input
+Building prefix dict from the default dictionary ...
+2021-11-24 04:00:46,339 : DEBUG : Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+2021-11-24 04:00:46,340 : DEBUG : Loading model from cache /tmp/jieba.cache
+Loading model cost 0.823 seconds.
+2021-11-24 04:00:47,163 : DEBUG : Loading model cost 0.823 seconds.
+Prefix dict has been built successfully.
+2021-11-24 04:00:47,163 : DEBUG : Prefix dict has been built successfully.
+finish fenci!
+dictionary saved!
+finished topic modeling assignment!
+finished topic modeling inference!
